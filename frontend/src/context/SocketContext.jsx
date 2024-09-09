@@ -20,7 +20,7 @@ export const SocketContextProvider = ({ children }) => {
     // Check if user is authenticated
     if (authUser) {
       // Create a new socket connection
-      const socket = io("http://localhost:5000", {
+      const socket = io("https://chat-app-with-socket-io-x3c2.onrender.com", {
         query: {
           userId: authUser._id
         }

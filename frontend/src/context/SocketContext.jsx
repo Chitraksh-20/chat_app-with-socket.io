@@ -19,6 +19,7 @@ export const SocketContextProvider = ({ children }) => {
   useEffect(() => {
     // Check if user is authenticated
     if (authUser) {
+      
       // Create a new socket connection
       const socket = io("https://chat-app-with-socket-io-x3c2.onrender.com", {
         query: {
